@@ -1,0 +1,31 @@
+.btn{
+    background-color: blue;
+    color:cornsilk;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 80px;
+    height: 40px;
+}
+.price{
+    font-size: 20px;
+    border-style: dashed;
+    padding:5px;
+    text-align: center;
+    width: 100px;
+}
+.pr{
+    color:seashell;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.fon{
+    padding-top:30px;
+    background-color:rgb(3, 11, 44);
+    padding-bottom: 100px;
+}
+.detail{
+    background-color: rgba(183, 213, 253, 0.5);
+    padding:45px;
+    margin: 50px;
+}

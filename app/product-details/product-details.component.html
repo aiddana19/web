@@ -1,0 +1,36 @@
+
+<div class="fon">
+  <h2>Product Details</h2>
+<div *ngIf="product.id==1">
+<div *ngFor="let playstation of playstations" class="detail">
+  <h3>
+    <a [title]="playstation.name + ' details'" [routerLink]="['/playstation', playstation.id]">
+      {{ playstation.name }}
+    </a>
+  </h3>
+  <p *ngIf="playstation.price" class="price">
+    Price: {{ playstation.price }}
+  </p>
+  <!-- <p *ngIf="playstation.rating" >
+    Rating: {{ playstation.rating }} of 5.
+  </p> -->
+  <!-- <p *ngIf="playstation.description" >
+    Description: {{ playstation.description }}
+  </p> -->
+  <button (click)="share()" class="btn">
+    Share
+  </button>
+  <!-- <app-product-alerts
+  [product]="product">
+</app-product-alerts> -->
+
+</div></div>
+<div *ngIf = "product.id==2">
+  <h3>Hello</h3>
+</div></div>
+<!-- <div *ngIf="product">
+   <h3>{{ product.name }}</h3> -->
+  <!-- <h4>{{ product.price | currency }}</h4> -->
+  <!-- <p>{{ product.description }}</p> -->
+  <!-- <button (click)="addToCart(product)">Buy</button> -->
+<!-- </div>  -->

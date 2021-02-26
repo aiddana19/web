@@ -1,0 +1,16 @@
+<div class="fon"><h2 class="pr">Items</h2>
+
+<div *ngIf="playstation" class="detail">
+  <h3>{{ playstation.name }}</h3>
+  <h4 class="price">{{ playstation.price | currency }}</h4> 
+  <p>{{ playstation.description }}</p>
+  <button (click)="addToCart(playstation)" class="btn">Buy</button>
+</div></div>
+  <!-- <div *ngIf="product">
+   <h3>{{ product.name }}</h3> -->
+  <!-- <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p> --> 
+<!-- </div>  -->
+  <!-- <app-product-alerts
+  [product]="product">
+</app-product-alerts> -->
