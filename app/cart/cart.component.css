@@ -1,0 +1,12 @@
+.cart-item{
+    background-color: rgba(183, 213, 253, 0.5);
+    padding:45px;
+    margin: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    color:rgb(14, 8, 4);
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
