@@ -1,0 +1,100 @@
+.btn{
+    background-color: blue;
+    color:cornsilk;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 80px;
+    height: 40px;
+}
+.price{
+    font-size: 20px;
+    border-style: dashed;
+    padding:5px;
+    text-align: center;
+    width: 100px;
+}
+.pr{
+    color:seashell;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.fon{
+    padding-top:30px;
+    background-color:rgb(3, 11, 44);
+    padding-bottom: 100px;
+}
+.detail{
+    background-color: rgba(183, 213, 253, 0.5);
+    padding:45px;
+    margin: 50px;
+}
+.btn_2{
+    box-shadow: 1px 1px 0 rgba(255,255,255,0.5) inset;
+    border-radius: 3px;
+    border: 1px solid;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 8px;
+    position: relative;
+  
+    font-size: 12px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  }
+  .btn-counter { margin-right: 39px; }
+.btn-counter:after,
+.btn-counter:hover:after { text-shadow: none; }
+.btn-counter:after {
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
+  background-color: #eee;
+  padding: 0 8px;
+  color: #777;
+  content: attr(data-count);
+  left: 100%;
+  margin-left: 8px;
+  margin-right: -13px;
+  position: absolute;
+  top: -1px;
+}
+.btn-counter:before {
+  transform: rotate(45deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+
+  background-color: #eee;
+  border: 1px solid #d3d3d3;
+  border-right: 0;
+  border-top: 0;
+  content: '';
+  position: absolute;
+  right: -13px;
+  top: 5px;
+  height: 6px;
+  width: 6px;
+  z-index: 1;
+  zoom: 1;
+}
+.btn_2 {
+    background-color: #dbdbdb;
+    border-color: #bbb;
+    color: #666;
+  }
+  .btn_2:hover,
+  .btn_2.active {
+    text-shadow: 0 1px 0 #b12f27;
+    background-color: #f64136;
+    border-color: #b12f27;
+  }
+  .btn_2:active { box-shadow: 0 0 5px 3px rgba(0,0,0,0.2) inset; }
+  .btn_2 span { color: #f64136; }
+  .btn_2:hover, .btn:hover span,
+  .btn_2.active, .btn.active span { color: #eeeeee; }
+  .btn_2:active span {
+    color: #b12f27;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+  }
+/*
+ * Custom styles
+ */

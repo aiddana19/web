@@ -1,0 +1,55 @@
+
+<div class="fon">
+  <h2>Product Details</h2>
+<div *ngIf="product.id==1">
+<div *ngFor="let playstation of playstations" class="detail">
+  <h3>
+    <a [title]="playstation.name + ' details'" [routerLink]="['/playstation', playstation.id]">
+      {{ playstation.name }}
+    </a>
+  </h3>
+  <!-- <p *ngIf="playstation.price" class="price">
+    Price: {{ playstation.price }}
+  </p> -->
+  <button (click)="share()" class="btn">
+    Share
+  </button>
+</div></div>
+<div *ngIf="product.id==2">
+<div *ngFor="let computer of computers" class="detail">
+  <h3>
+    <a [title]="computer.name + ' details'" [routerLink]="['/computer', computer.id]">
+      {{ computer.name }}
+    </a>
+  </h3>
+  <!-- <p *ngIf="computer.price" class="price">
+    Price: {{ computer.price }}
+  </p> -->
+  <button (click)="share()" class="btn">
+    Share
+  </button>
+  <!-- <button (click)="remove()" class="btn">
+    Remove
+  </button> -->
+</div></div>
+<div *ngIf="product.id==3">
+<div *ngFor="let art of arts" class="detail">
+  <h3>
+    <a [title]="art.name + ' details'" [routerLink]="['/art', art.id]">
+      {{ art.name }}
+    </a>
+  </h3>
+  <!-- <p *ngIf="computer.price" class="price">
+    Price: {{ computer.price }}
+  </p> -->
+  <button (click)="share()" class="btn">
+    Share
+  </button>
+</div></div>
+</div>
+<!-- <div *ngIf="product">
+   <h3>{{ product.name }}</h3> -->
+  <!-- <h4>{{ product.price | currency }}</h4> -->
+  <!-- <p>{{ product.description }}</p> -->
+  <!-- <button (click)="addToCart(product)">Buy</button> -->
+<!-- </div>  -->

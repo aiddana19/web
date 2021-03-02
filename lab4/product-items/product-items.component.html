@@ -1,0 +1,40 @@
+<div class="fon"><h2 class="pr">Items</h2>
+
+<div *ngIf="playstation" class="detail">
+  <h3>{{ playstation.name }}</h3>
+  <h4 class="price">{{ playstation.price | currency }}</h4> 
+  <p>{{ playstation.description }}</p>
+  <button (click)="addToCart(playstation)" class="btn">Buy</button>
+  <fieldset>
+    <div ng-app="">
+      <div ng-click="count = count + 1" ng-init="count=0">
+        Click to Increment
+          <div ng-click="count = count - 1; $event.stopPropagation();">Click to Decrement</div>
+      </div>
+      count: {{count}}
+    </div>
+        <!-- <p>
+      <a href="#" title="Love it" class="btn_2 btn-counter multiple-count" data-count="0"><span>&#x2764;</span></a>
+      <a href="#" title="Love it" class="btn_2 btn-counter multiple-count" data-count="0"><span>&#x2764;</span> Love it</a>
+    </p> -->
+  </fieldset>
+</div></div>
+<script>$('.btn-counter').on('click', function(event, count) {
+  event.preventDefault();
+  
+  var $this = $(this),
+      count = $this.attr('data-count'),
+      active = $this.hasClass('active'),
+      multiple = $this.hasClass('multiple-count');
+  $.fn.noop = $.noop;
+  $this.attr('data-count', ! active || multiple ? ++count : --count  )[multiple ? 'noop' : 'toggleClass']('active');
+  
+});</script>
+  <!-- <div *ngIf="product">
+   <h3>{{ product.name }}</h3> -->
+  <!-- <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p> --> 
+<!-- </div>  -->
+  <!-- <app-product-alerts
+  [product]="product">
+</app-product-alerts> -->
